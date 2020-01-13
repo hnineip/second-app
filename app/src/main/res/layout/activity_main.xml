@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 6 Social Media Site"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnimage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtapp"
+        app:layout_constraintRight_toLeftOf="@+id/btnimage2"
+        android:src="@drawable/ic_icons_facebook"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints,UnknownId"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <ImageButton
+        android:id="@+id/btnimage2"
+        android:layout_width="75dp"
+        android:layout_height="67dp"
+        android:src="@drawable/ic_icons_instagram1"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/btnimage1"
+        app:layout_constraintRight_toLeftOf="@+id/btnimage3"
+        app:layout_constraintTop_toBottomOf="@+id/txtapp" />
+
+    <ImageButton
+        android:id="@+id/btnimage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icons_twitter"
+        app:layout_constraintTop_toBottomOf="@+id/txtapp"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/btnimage2"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txtname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnimage1"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/txtname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toRightOf="@+id/txtname1"
+        app:layout_constraintRight_toLeftOf="@+id/txtname3"
+        app:layout_constraintTop_toBottomOf="@+id/btnimage2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/txtname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:text="Twitter"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toRightOf="@+id/txtname2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnimage3" />
+
+    <ImageButton
+        android:id="@+id/btnimage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icons_tumblr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnimage5"
+        app:layout_constraintTop_toBottomOf="@+id/txtname1"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnimage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icons_linkedin"
+        app:layout_constraintLeft_toRightOf="@+id/btnimage4"
+        app:layout_constraintRight_toLeftOf="@id/btnimage6"
+        app:layout_constraintTop_toBottomOf="@+id/txtname2"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnimage6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icons_whatsapp"
+        app:layout_constraintLeft_toRightOf="@+id/btnimage5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname3"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtname4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tumblr"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnimage4"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <TextView
+        android:id="@+id/txtname5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkedIn"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@+id/txtname4"
+        app:layout_constraintRight_toLeftOf="@+id/txtname6"
+        app:layout_constraintTop_toBottomOf="@+id/btnimage5"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="4dp"
+        />
+    <TextView
+        android:id="@+id/txtname6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WhatApp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toRightOf="@+id/txtname5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnimage6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/txtlast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Update: December 2nd,2019"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toBottomOf="@+id/txtname5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_margin="25dp" />
+
+    <TextView
+        android:id="@+id/txtparagraph"
+        android:layout_width="395dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Paragraph"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlast"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtparagraph2"
+        android:layout_width="396dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Paragraph2"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtparagraph"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
